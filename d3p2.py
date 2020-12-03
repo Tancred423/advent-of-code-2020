@@ -38,44 +38,15 @@ class Toboggan:
             self.trees += 1
 
 
-# Right 1, down 1
-toboggan = Toboggan()
+slopes = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
+product = 1
 
-while (toboggan.current_row != None):
-    toboggan.move(1, 1)
+for x, y in slopes:
+    toboggan = Toboggan()
 
-first = toboggan.trees
+    while toboggan.current_row != None:
+        toboggan.move(x, y)
 
-# Right 3, down 1
-toboggan = Toboggan()
+    product *= toboggan.trees
 
-while (toboggan.current_row != None):
-    toboggan.move(3, 1)
-
-second = toboggan.trees
-
-# Right 5, down 1
-toboggan = Toboggan()
-
-while (toboggan.current_row != None):
-    toboggan.move(5, 1)
-
-third = toboggan.trees
-
-# Right 7, down 1
-toboggan = Toboggan()
-
-while (toboggan.current_row != None):
-    toboggan.move(7, 1)
-
-fourth = toboggan.trees
-
-# Right 1, down 2
-toboggan = Toboggan()
-
-while (toboggan.current_row != None):
-    toboggan.move(1, 2)
-
-fifth = toboggan.trees
-
-print(f'Trees hit: {first} * {second} * {third} * {fourth} * {fifth} = {first * second * third * fourth * fifth}')
+print(f'Trees hit: {product}')
