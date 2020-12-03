@@ -15,6 +15,11 @@ class Toboggan:
         self.row += move_y
         try:
             self.current_row = puzzle_input[self.row]
+
+            # Return on blank lines
+            if not self.current_row:
+                self.current_row = None
+                return
         except IndexError:
             self.current_row = None
             return
