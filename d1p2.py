@@ -1,21 +1,17 @@
-with open('d1.txt') as f:
-    puzzle_input = f.readlines()
-
-puzzle_input = [int(x.strip()) for x in puzzle_input]
+from puzzle_input import lines_int
 
 found = False
 
-for val in puzzle_input:
-    missing = 2020 - val
+for line in lines_int:
+    missing = 2020 - line
 
-    for val2 in puzzle_input:
-        missing2 = missing - val2
+    for line2 in lines_int:
+        missing2 = missing - line2
 
-        if (missing2 in puzzle_input):
+        if missing2 in lines_int:
+            print(f"The puzzle answer is: {line * line2 * missing2}")
             found = True
             break
 
     if found:
         break
-
-print(val * val2 * missing2)

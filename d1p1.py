@@ -1,11 +1,7 @@
-with open('d1.txt') as f:
-    puzzle_input = f.readlines()
+from puzzle_input import lines_int
 
-puzzle_input = [int(x.strip()) for x in puzzle_input]
-
-for val in puzzle_input:
-    missing = 2020 - val
-    if (missing in puzzle_input):
+for line in lines_int:
+    missing = 2020 - line
+    if missing in lines_int:
+        print(f"The puzzle answer is: {line * missing}")
         break
-
-print(val * missing)
