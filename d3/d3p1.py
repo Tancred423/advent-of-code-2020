@@ -1,4 +1,4 @@
-from puzzle_input import lines
+lines = open('d3/d3.txt').read().splitlines()
 
 
 class Toboggan:

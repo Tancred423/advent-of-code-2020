@@ -1,4 +1,4 @@
-from puzzle_input import lines_int
+lines_int = [int(x) for x in open('d1/d1.txt').read().splitlines()]
 
 for line in lines_int:
     missing = 2020 - line

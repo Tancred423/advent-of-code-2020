@@ -1,4 +1,4 @@
-from puzzle_input import lines
+lines = open('d2/d2.txt').read().splitlines()
 
 valid_passwords = 0
 

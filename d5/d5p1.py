@@ -1,5 +1,5 @@
-from puzzle_input import lines
 import math
+lines = open('d5/d5.txt').read().splitlines()
 
 seat_ids = []
 
@@ -32,9 +32,4 @@ for line in lines:
     seat_ids.append(row * 8 + a)  # a and b are always the same
 
 seat_ids.sort()
-
-# Finding my seat
-for i in range(seat_ids[1], seat_ids[-1]):
-    if not i in seat_ids and i + 1 in seat_ids and i - 1 in seat_ids:
-        print(f"The puzzle result is: {i}")
-        break
+print(f"The puzzle result is: {seat_ids[-1]}")

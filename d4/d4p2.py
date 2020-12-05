@@ -1,5 +1,5 @@
-from puzzle_input import lines
 import re
+lines = open('d4/d4.txt').read().splitlines()
 
 # New input with a single string per passport
 passports = []
