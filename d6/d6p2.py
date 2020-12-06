@@ -21,8 +21,8 @@ for line in lines:
     if not line:
         count += checkCount(persons)
         persons.clear()
-        continue
-    persons.append(line)
+    else:
+        persons.append(line)
 count += checkCount(persons)
 
 print(f"The puzzle result is: {count}")
