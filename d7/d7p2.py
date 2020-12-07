@@ -35,18 +35,18 @@ for line in lines:
 
 # Recusive counting of inner bags
 
-def get_bag_count(bags, bag):
+def get_bag_count(bag):
     count = 1  # The bag itself
 
     # The count of sub bags
     sub_bags = bags[bag]
     for sub_bag, amount in sub_bags.items():
-        count += amount * get_bag_count(bags, sub_bag)
+        count += amount * get_bag_count(sub_bag)
 
     return count
 
 
 # Minus one because the shiny gold bag doesn't count
-count = get_bag_count(bags, 'shiny gold') - 1
+count = get_bag_count('shiny gold') - 1
 
 print(f"The puzzle result is: {count}")

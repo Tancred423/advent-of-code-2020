@@ -35,7 +35,7 @@ for line in lines:
 
 # Count shiny gold bags
 
-def get_keys(bags, keys):
+def get_keys(keys):
     # Search for all bags that contains at least one of the keys
     new_keys = []
 
@@ -48,12 +48,12 @@ def get_keys(bags, keys):
 
 
 # Initial run for bags that contain shiny gold directly
-keys = get_keys(bags, ['shiny gold'])
+keys = get_keys(['shiny gold'])
 keys_len = len(set(keys))
 
 while True:
     # Append the bags that contain the bags that contain shiny gold
-    keys += get_keys(bags, keys)
+    keys += get_keys(keys)
 
     # If the length doesn't change, there are no more bags to collect
     if len(set(keys)) == keys_len:
