@@ -1,4 +1,4 @@
-lines = open('d6/d6.txt').read().splitlines()
+lines = open('06/input.txt').read().splitlines()
 
 # New input with only one string per group
 inputs = ''.join(['-' if not line else line for line in lines]).split('-')

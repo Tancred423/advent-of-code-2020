@@ -1,4 +1,4 @@
-jolts = [int(x) for x in open('d10/d10.txt').read().splitlines()]
+jolts = [int(x) for x in open('10/input.txt').read().splitlines()]
 
 # Append 0 (start) and max + 3 (end)
 # Then sort

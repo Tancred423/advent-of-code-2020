@@ -1,4 +1,4 @@
-lines_int = [int(x) for x in open('d9/d9.txt').read().splitlines()]
+lines_int = [int(x) for x in open('09/input.txt').read().splitlines()]
 
 i = 25
 while i < len(lines_int):

@@ -1,4 +1,4 @@
-lines = open('d4/d4.txt').read().splitlines()
+lines = open('04/input.txt').read().splitlines()
 
 # New input with a single string per pair
 passports = []

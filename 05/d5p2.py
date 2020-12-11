@@ -1,5 +1,5 @@
 import math
-lines = open('d5/d5.txt').read().splitlines()
+lines = open('05/input.txt').read().splitlines()
 
 seat_ids = []
 

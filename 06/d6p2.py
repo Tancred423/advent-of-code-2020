@@ -1,4 +1,4 @@
-lines = open('d6/d6.txt').read().splitlines()
+lines = open('06/input.txt').read().splitlines()
 
 persons = []
 count = 0

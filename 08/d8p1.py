@@ -1,4 +1,4 @@
-lines = open('d8/d8.txt').read().splitlines()
+lines = open('08/input.txt').read().splitlines()
 
 
 def get_next_index(i, acc):

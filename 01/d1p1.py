@@ -1,4 +1,4 @@
-lines_int = [int(x) for x in open('d1/d1.txt').read().splitlines()]
+lines_int = [int(x) for x in open('01/input.txt').read().splitlines()]
 
 for line in lines_int:
     missing = 2020 - line

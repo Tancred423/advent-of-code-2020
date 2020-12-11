@@ -1,4 +1,4 @@
-jolts = [int(x) for x in open('d10/d10.txt').read().splitlines()]
+jolts = [int(x) for x in open('10/input.txt').read().splitlines()]
 jolts.sort()
 
 one_jolt = 0

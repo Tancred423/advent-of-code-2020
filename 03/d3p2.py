@@ -1,4 +1,4 @@
-lines = open('d3/d3.txt').read().splitlines()
+lines = open('03/input.txt').read().splitlines()
 
 
 class Toboggan:

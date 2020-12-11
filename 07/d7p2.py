@@ -1,4 +1,4 @@
-lines = open('d7/d7.txt').read().splitlines()
+lines = open('07/input.txt').read().splitlines()
 
 # Building a dictionary with all bags
 # bags:

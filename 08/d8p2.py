@@ -1,6 +1,6 @@
 # Disclaimer: This solution is cheated and copy pasted because I was too stoopid
 
-lines = [(l[:3], int(l[4:])) for l in open('d8/d8.txt')]
+lines = [(l[:3], int(l[4:])) for l in open('08/input.txt')]
 
 
 def run(lines):

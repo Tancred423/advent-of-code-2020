@@ -1,4 +1,4 @@
-lines = open('d2/d2.txt').read().splitlines()
+lines = open('02/input.txt').read().splitlines()
 
 valid_passwords = 0
 
